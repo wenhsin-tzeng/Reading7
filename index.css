@@ -1,0 +1,119 @@
+body{
+  background: rgb(255,199,187);
+  background: radial-gradient(circle, rgba(255,199,187,1) 0%, rgba(247,95,61,1) 65%, rgba(247,67,61,1) 100%);;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 2em;
+  font-family: 'DM Serif Display', serif;
+  font-size: 50px;
+}
+.line-1{
+    position: relative;
+    top: 10%;
+    width: 40em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+.anim-typewriter{
+  animation: typewriter 3s steps(20) 1s 1 normal both,
+             blinkTextCursor 450ms steps(20) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 7em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+.container{
+  position: absolute;
+  top: calc(40%);
+  left: calc(50% - 425px);
+  width: 850px;
+  height: 2850px;
+  background-color: #f2d4cd;
+}
+.text{
+  margin-top: 40px;
+  font-size: 35px;
+  text-align: center;
+  line-height: 40px;
+  color: #ea5a1c;
+}
+.body{
+  font-size: 18px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.subtitle{
+  font-size: 30px;
+  color: black;
+  text-align: left;
+  margin-left: 45px;
+  margin-right: 600px;
+  padding-left: 15px;
+  background-color: white;
+}
+.body2{
+  font-size: 20px;
+  color: #B03907;
+  font-family: 'Heebo', sans-serif;
+  text-align: left;
+  margin-left: 45px;
+  margin-right: 45px;
+  line-height: 30px;
+  padding-top: 20px;
+}
+.image{
+  position: absolute;
+  width: 30%;
+  right: 65%;
+  padding-top: 10px;
+}
+.karl{
+  position: absolute;
+  width: 30%;
+  left: 38%;
+  padding-top: 23px;
+}
+.subtitle2{
+  font-size: 30px;
+  color: #ffede8;
+  text-align: left;
+  margin-left: 45px;
+  margin-right: 550px;
+  margin-top: 400px;
+  padding-left: 15px;
+  background-color: #e55c2d;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 32%;
+  padding: 4px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.content{
+  width: 30%;
+  right: 65%;
+  padding-top: 15px;
+}
+.link{
+  text-align: left;
+  padding-top: 80px;
+  padding-left: 50px;
+  font-size: 17px;
+}
